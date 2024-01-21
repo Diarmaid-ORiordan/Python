@@ -1,0 +1,23 @@
+from re import A
+
+def endurance_values():
+    # Loop forever
+    while True:
+        try:
+            user_input = int(input("Enter the amount of fuel available: "))
+            user_input2 = int(input("Enter consumption in litres per minute: "))
+        except:
+            # Bad value, 
+            print("Error")
+            continue
+        else:
+            print("Valid input")
+            # Good value, exit the loop
+            break
+        finally:
+            # Continue
+            print("This message shows every time, regardless of the programme flow")
+       
+      
+    endurance_values()
+
